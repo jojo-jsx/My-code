@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.nav-btn {
+  display: flex;
+  gap: 20px;
+}
+.login {
+  border: none;
+  background-color: white;
+}
+.demo {
+  border: none;
+  border: 2px solid gray;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.started {
+  border: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+.contact-container {
+  text-align: center;
+  padding: 50px;
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.fname label {
+  display: block;
+  margin-bottom: 10px;
+}
+.lname label {
+  display: block;
+  margin-bottom: 10px;
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+.mail label {
+  display: block;
+  margin-bottom: 10px;
+}
+.num label {
+  display: block;
+  margin-bottom: 10px;
+}
+.message label {
+  display: block;
+  margin-bottom: 10px;
+}
+.message input {
+  padding: 40px;
+}
