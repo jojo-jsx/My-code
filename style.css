@@ -51,9 +51,21 @@ header {
   display: block;
   margin-bottom: 10px;
 }
+.fname input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid gray;
+}
 .lname label {
   display: block;
   margin-bottom: 10px;
+}
+.lname input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid gray;
 }
 .form-row {
   display: flex;
@@ -63,14 +75,39 @@ header {
   display: block;
   margin-bottom: 10px;
 }
+.mail input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid gray;
+}
 .num label {
   display: block;
   margin-bottom: 10px;
+}
+.num input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid gray;
+  width: 100%;
 }
 .message label {
   display: block;
   margin-bottom: 10px;
 }
+
 .message input {
   padding: 40px;
+  width: 100%;
+  border: none;
+  border: 2px solid gray;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colums */
+  grid-template-rows: repeat(3, auto); /* 3 rows */
+  gap: 10px;
 }
