@@ -44,8 +44,8 @@ header {
 .hero-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 70px;
+  align-items: center;
 }
 .fname label {
   display: block;
@@ -110,4 +110,12 @@ header {
   grid-template-columns: 1fr 1fr; /* 2 colums */
   grid-template-rows: repeat(3, auto); /* 3 rows */
   gap: 10px;
+}
+
+/* responsve design  */
+
+@media screen and (max-width: 760px) {
+  .hero-container {
+    flex-direction: column;
+  }
 }
