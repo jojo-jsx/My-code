@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Smooch+Sans:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Smooch Sans", sans-serif;
+  font-size: 25px;
 }
 header {
   display: flex;
@@ -13,6 +16,12 @@ header {
   list-style: none;
   display: flex;
   gap: 40px;
+}
+.chat-container ul li {
+  list-style: none;
+}
+.chat-container ul li a {
+  text-decoration: none;
 }
 .nav-btn {
   display: flex;
@@ -46,6 +55,9 @@ header {
   justify-content: center;
   gap: 70px;
   align-items: center;
+}
+.chat-container li a {
+  color: black;
 }
 .fname label {
   display: block;
@@ -103,6 +115,7 @@ header {
   width: 100%;
   border: none;
   border: 2px solid gray;
+  border-radius: 10px;
 }
 
 .checkbox-grid {
@@ -110,6 +123,15 @@ header {
   grid-template-columns: 1fr 1fr; /* 2 colums */
   grid-template-rows: repeat(3, auto); /* 3 rows */
   gap: 10px;
+}
+
+.icon {
+  margin-right: 4px;
+}
+.logo-icon {
+  margin-right: 10px;
+  font-size: 15px;
+  align-items: center;
 }
 
 /* responsve design  */
