@@ -133,11 +133,52 @@ header {
   font-size: 15px;
   align-items: center;
 }
-
+/* hide burger */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+/* hide checkbox */
+#menu-toggle {
+  display: none;  
+}
 /* responsve design  */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1068px) {
   .hero-container {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1068px) {
+  .menu-icon {
+    display: block;
+    margin-left: 70%;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  /* show menu when checkbox is checked */
+  #menu-toggle :checked ~ nav .nav-links {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  header .nav-btn {
+    display: none;
   }
 }
