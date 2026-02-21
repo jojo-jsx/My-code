@@ -138,6 +138,10 @@ header {
   display: none;
   cursor: pointer;
 }
+
+.display-none {
+    display: none;
+}
 /* hide checkbox */
 #menu-toggle {
   display: none;  
@@ -164,7 +168,6 @@ header {
     width: 100%;
     background-color: #333;
     flex-direction: column;
-    display: none;
   }
 
   .nav-links li {

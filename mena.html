@@ -17,9 +17,9 @@
         <!-- burger-checkbox -->
         <input type="checkbox" name="menu-toggle" id="menu-toggle">
         <!-- burger icon -->
-        <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+        <label for="menu-toggle" class="menu-icon"><i id="menu-toggler" class="fa-solid fa-bars"></i></label>
         <nav>
-            <ul class="nav-links">
+            <ul class="nav-links" id="menu-items">
                 <li>Home</li>
                 <li>Products</li>
                 <li>Solution</li>
@@ -122,5 +122,13 @@
         </div>
     </div><br><br>
 </body>
+
+<script>
+    const menuToggler = document.getElementById("menu-toggler");
+    menuToggler.addEventListener("click", () => {
+        const menuItems = document.getElementById("menu-items");
+        menuItems.classList.toggle("display-none");
+    })
+</script>
 
 </html>
